@@ -25,7 +25,7 @@ void lightUpLed500ms(uint8_t led) {
   delay(500);
 }
 
-// Version 1: For plain text only
+// For plain text only
 void writeOled(const __FlashStringHelper* message) {
   oled.clear();
   oled.set2X();
@@ -33,7 +33,7 @@ void writeOled(const __FlashStringHelper* message) {
   oled.print(message);
 }
 
-// Version 2: For text + a number (Level)
+// For text + a number (Level)
 void writeOled(const __FlashStringHelper* message, uint8_t value) {
   oled.clear();
   oled.set2X();
